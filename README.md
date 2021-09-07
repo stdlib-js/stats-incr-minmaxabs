@@ -130,6 +130,25 @@ console.log( accumulator() );
 
 <!-- /.examples -->
 
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+* * *
+
+## See Also
+
+-   [`@stdlib/stats/incr/maxabs`][@stdlib/stats/incr/maxabs]: compute a maximum absolute value incrementally.
+-   [`@stdlib/stats/incr/minabs`][@stdlib/stats/incr/minabs]: compute a minimum absolute value incrementally.
+-   [`@stdlib/stats/incr/minmax`][@stdlib/stats/incr/minmax]: compute a minimum and maximum incrementally.
+-   [`@stdlib/stats/incr/mminmaxabs`][@stdlib/stats/incr/mminmaxabs]: compute moving minimum and maximum absolute values incrementally.
+
+</section>
+
+<!-- /.related -->
+
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
 
 <section class="main-repo" >
 
@@ -184,6 +203,18 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [stdlib-authors]: https://github.com/stdlib-js/stdlib/graphs/contributors
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/stats-incr-minmaxabs/main/LICENSE
+
+<!-- <related-links> -->
+
+[@stdlib/stats/incr/maxabs]: https://github.com/stdlib-js/stats-incr-maxabs
+
+[@stdlib/stats/incr/minabs]: https://github.com/stdlib-js/stats-incr-minabs
+
+[@stdlib/stats/incr/minmax]: https://github.com/stdlib-js/stats-incr-minmax
+
+[@stdlib/stats/incr/mminmaxabs]: https://github.com/stdlib-js/stats-incr-mminmaxabs
+
+<!-- </related-links> -->
 
 </section>
 
