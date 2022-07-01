@@ -1,4 +1,0 @@
-// Copyright (c) 2022 The Stdlib Authors. License is Apache-2.0: http://www.apache.org/licenses/LICENSE-2.0
-/// <reference types="./index.d.ts" />
-import s from"https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-array-like-object@esm/index.mjs";import t from"https://cdn.jsdelivr.net/gh/stdlib-js/error-tools-fmtprodmsg@esm/index.mjs";import e from"https://cdn.jsdelivr.net/gh/stdlib-js/math-base-assert-is-nan@esm/index.mjs";import r from"https://cdn.jsdelivr.net/gh/stdlib-js/constants-float64-pinf@esm/index.mjs";import n from"https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-abs@esm/index.mjs";var i=s,m=t,d=e,o=r,l=n;var a=function(s){var t,e,r,n;if(0===arguments.length)t=[0,0];else{if(!i(s))throw new TypeError(m("0dzAC",s));t=s}return e=o,r=0,n=!1,a;function a(s){var i;return 0===arguments.length?!1===n?null:(t[0]=e,t[1]=r,t):(n=!0,d(s)?(e=s,r=s):((i=l(s))<e&&(e=i),i>r&&(r=i)),t[0]=e,t[1]=r,t)}};export{a as default};
-//# sourceMappingURL=index.mjs.map
