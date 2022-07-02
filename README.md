@@ -53,7 +53,9 @@ If no recognized module system is present, access bundle contents via the global
 ```html
 <script type="text/javascript">
 (function () {
+(function () {
     window.incrminmaxabs;
+})();
 })();
 </script>
 ```
@@ -131,6 +133,7 @@ mm = accumulator();
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-minmaxabs@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
+(function () {
 
 var accumulator;
 var v;
@@ -146,6 +149,7 @@ for ( i = 0; i < 100; i++ ) {
 }
 console.log( accumulator() );
 
+})();
 })();
 </script>
 </body>
@@ -244,13 +248,13 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/stats/incr/maxabs]: https://github.com/stdlib-js/stats-incr-maxabs/tree/umd
+[@stdlib/stats/incr/maxabs]: https://github.com/stdlib-js/stats-incr-maxabs/tree/umd/tree/umd
 
-[@stdlib/stats/incr/minabs]: https://github.com/stdlib-js/stats-incr-minabs/tree/umd
+[@stdlib/stats/incr/minabs]: https://github.com/stdlib-js/stats-incr-minabs/tree/umd/tree/umd
 
-[@stdlib/stats/incr/minmax]: https://github.com/stdlib-js/stats-incr-minmax/tree/umd
+[@stdlib/stats/incr/minmax]: https://github.com/stdlib-js/stats-incr-minmax/tree/umd/tree/umd
 
-[@stdlib/stats/incr/mminmaxabs]: https://github.com/stdlib-js/stats-incr-mminmaxabs/tree/umd
+[@stdlib/stats/incr/mminmaxabs]: https://github.com/stdlib-js/stats-incr-mminmaxabs/tree/umd/tree/umd
 
 <!-- </related-links> -->
 
