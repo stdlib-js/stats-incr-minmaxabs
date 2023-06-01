@@ -1,7 +1,7 @@
-/**
+/*
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2019 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,16 +16,31 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 2.0
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@esm/index.d.ts"/>
+
+import { ArrayLike } from '@stdlib/types/array';
 
 /**
-* Compute minimum and maximum absolute values incrementally.
+* If provided a value, the accumulator function returns updated absolute minimum and maximum values. If not provided a value, the accumulator function returns the current minimum and maximum values.
 *
-* @module @stdlib/stats-incr-minmaxabs
+* ## Notes
+*
+* -   If provided `NaN`, the minimum and maximum values are equal to `NaN` for all future invocations.
+*
+* @param x - input value
+* @returns output array or null
+*/
+type accumulator = ( x?: number ) => ArrayLike<number> | null;
+
+/**
+* Returns an accumulator function which incrementally computes minimum and maximum absolute values.
+*
+* @param out - output array
+* @returns accumulator function
 *
 * @example
-* var incrminmaxabs = require( '@stdlib/stats-incr-minmaxabs' );
-*
 * var accumulator = incrminmaxabs();
 *
 * var mm = accumulator();
@@ -46,12 +61,9 @@
 * mm = accumulator();
 * // returns [ 2.0, 5.0 ]
 */
-
-// MODULES //
-
-var main = require( './main.js' );
+declare function incrminmaxabs( out?: ArrayLike<number> ): accumulator;
 
 
 // EXPORTS //
 
-module.exports = main;
+export = incrminmaxabs;
