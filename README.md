@@ -18,44 +18,47 @@ limitations under the License.
 
 -->
 
+
+<details>
+  <summary>
+    About stdlib...
+  </summary>
+  <p>We believe in a future in which the web is a preferred environment for numerical computation. To help realize this future, we've built stdlib. stdlib is a standard library, with an emphasis on numerical and scientific computation, written in JavaScript (and C) for execution in browsers and in Node.js.</p>
+  <p>The library is fully decomposable, being architected in such a way that you can swap out and mix and match APIs and functionality to cater to your exact preferences and use cases.</p>
+  <p>When you use stdlib, you can be absolutely certain that you are using the most thorough, rigorous, well-written, studied, documented, tested, measured, and high-quality code out there.</p>
+  <p>To join us in bringing numerical computing to the web, get started by checking us out on <a href="https://github.com/stdlib-js/stdlib">GitHub</a>, and please consider <a href="https://opencollective.com/stdlib">financially supporting stdlib</a>. We greatly appreciate your continued support!</p>
+</details>
+
 # incrminmaxabs
 
 [![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
 > Compute minimum and maximum absolute values incrementally.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/stats-incr-minmaxabs
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-incrminmaxabs = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-minmaxabs@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var incrminmaxabs = require( 'path/to/vendor/umd/stats-incr-minmaxabs/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-minmaxabs@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.incrminmaxabs;
-})();
-</script>
+var incrminmaxabs = require( '@stdlib/stats-incr-minmaxabs' );
 ```
 
 #### incrminmaxabs( \[out] )
@@ -123,14 +126,9 @@ mm = accumulator();
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-minmaxabs@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var randu = require( '@stdlib/random-base-randu' );
+var incrminmaxabs = require( '@stdlib/stats-incr-minmaxabs' );
 
 var accumulator;
 var v;
@@ -145,11 +143,6 @@ for ( i = 0; i < 100; i++ ) {
     accumulator( v );
 }
 console.log( accumulator() );
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -212,8 +205,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/stats-incr-minmaxabs.svg
 [npm-url]: https://npmjs.org/package/@stdlib/stats-incr-minmaxabs
 
-[test-image]: https://github.com/stdlib-js/stats-incr-minmaxabs/actions/workflows/test.yml/badge.svg?branch=main
-[test-url]: https://github.com/stdlib-js/stats-incr-minmaxabs/actions/workflows/test.yml?query=branch:main
+[test-image]: https://github.com/stdlib-js/stats-incr-minmaxabs/actions/workflows/test.yml/badge.svg?branch=v0.1.0
+[test-url]: https://github.com/stdlib-js/stats-incr-minmaxabs/actions/workflows/test.yml?query=branch:v0.1.0
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/stats-incr-minmaxabs/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/stats-incr-minmaxabs?branch=main
@@ -244,13 +237,13 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/stats/incr/maxabs]: https://github.com/stdlib-js/stats-incr-maxabs/tree/umd
+[@stdlib/stats/incr/maxabs]: https://github.com/stdlib-js/stats-incr-maxabs
 
-[@stdlib/stats/incr/minabs]: https://github.com/stdlib-js/stats-incr-minabs/tree/umd
+[@stdlib/stats/incr/minabs]: https://github.com/stdlib-js/stats-incr-minabs
 
-[@stdlib/stats/incr/minmax]: https://github.com/stdlib-js/stats-incr-minmax/tree/umd
+[@stdlib/stats/incr/minmax]: https://github.com/stdlib-js/stats-incr-minmax
 
-[@stdlib/stats/incr/mminmaxabs]: https://github.com/stdlib-js/stats-incr-mminmaxabs/tree/umd
+[@stdlib/stats/incr/mminmaxabs]: https://github.com/stdlib-js/stats-incr-mminmaxabs
 
 <!-- </related-links> -->
 
